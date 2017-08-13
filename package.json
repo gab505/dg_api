@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "dgapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gab505/dg_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gab505/dg_api/issues"
+  },
+  "homepage": "https://github.com/gab505/dg_api#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
