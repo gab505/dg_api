@@ -1,15 +1,19 @@
-let express = require('express');
+var express = require('express');
 
-const app = express();
+var app = express();
 
-let port = process.env.PORT || 5000;
+
+app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(_dirname + '/public'));
+
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
     res.send("Please visit DG website");
 })
 
-app.listen(port, function(){
-    console.log("Server has started");
+app.listen(app.get('port'), function(){
+    console.log("Server has started", app.get('port'));
 })
